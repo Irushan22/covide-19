@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,47 +16,44 @@
       <div class="col-lg-12 mb-5 text-center">
         <div class="heading-text">
           <h3>SL COVID-19 DASHBOARD</h3>
-          <span>Live</span>
-          <div class="toolbar">
-            <a href="#" class="btn btn_live"><span class="live-icon"></span></a>
-          </div>
+          <p>Last Update: <span id="update_date_time"></span><span class="blink_me"><i class="fa fa-circle" style="font-size:12px;color: #73ef5d; padding-left: 10px;"></i></i></span></p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-3">
-        <div class="card" style="width: 15rem;">
+        <div class="card">
           <div class="card-body">
             <h6 class="card-subtitle mb-2">Total Confirmed</h6>
-            <h5 id="local_total_cases" class="card-title count" style="color: #84f9e4;">0</h5>
-             <h6 class="card-subtitle mb-2 today-details" style="color: #84f9e4;">Today: <span id="local_new_cases" class="count">234</span></h6>
+            <h5 id="local_total_cases" class="card-title count" style="color: #b57cff;">0</h5>
+             <h6 class="card-subtitle mb-2 today-details" style="color: #b57cff;">Today: <span id="local_new_cases" class="count">0</span></h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <div class="card-body">
               <h6 class="card-subtitle mb-2">Deaths</h6>
               <h5 id="local_deaths" class="card-title" style="color: #ff575f;"><span class="count">0</span></h5>
-              <h6 class="card-subtitle mb-2 today-details" style="color: #ff575f;">Today: <span id="local_new_deaths" class="count">34</span></h6>
+              <h6 class="card-subtitle mb-2 today-details" style="color: #ff575f;">Today: <span id="local_new_deaths" class="count">0</span></h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <div class="card-body">
               <h6 class="card-subtitle mb-2">Total Tested</h6>
               <h5 id="total_pcr_testing_count" class="card-title count" style="color: #f5b932;">0</h5>
-              <h6 class="card-subtitle mb-2 today-details" style="color: #f5b932;">active cases: <span id="local_active_cases" class="count">90</span></h6>
+              <h6 class="card-subtitle mb-2 today-details" style="color: #f5b932;">active cases: <span id="local_active_cases" class="count">0</span></h6>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <div class="card-body">
               <h6 class="card-subtitle mb-2">Total Recovered</h6>
               <h5 id="local_recovered" class="card-title count" style="color: #73ef5d;">70</h5>
-              <h6 class="card-subtitle mb-2 today-details" style="color: #73ef5d;">Suspected: <span id="suspected" class="count">90</span></h6>
+              <h6 class="card-subtitle mb-2 today-details" style="color: #73ef5d;">Suspected: <span id="suspected" class="count">0</span></h6>
             </div>
           </div>
         </div>

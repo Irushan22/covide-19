@@ -17,3 +17,12 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
 }
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
