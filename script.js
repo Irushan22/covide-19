@@ -10,4 +10,18 @@ $(document).ready(function(){
         var local_total_number_of_individuals_in_hospitals = result.data.local_total_number_of_individuals_in_hospitals;
         var total_pcr_testing_count = result.data.total_pcr_testing_count;
       });
+
+
+    $('.count').each(function () {
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
   });
