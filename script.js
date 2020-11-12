@@ -20,21 +20,24 @@ $(document).ready(function(){
         $("#local_active_cases").text(local_active_cases);
         $("#local_recovered").text(local_recovered);
         $("#suspected").text(local_total_number_of_individuals_in_hospitals);
+        
+        $('.count').each(function () {
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+        });
+    });
+       
         // local_total_cases = $("#demo").html();
         // document.getElementById("demo").innerHTML = local_total_cases;
       });
 
 
-//     $('.count').each(function () {
-//       $(this).prop('Counter',0).animate({
-//         Counter: $(this).text()
-//     }, {
-//         duration: 1000,
-//         easing: 'swing',
-//         step: function (now) {
-//             $(this).text(Math.ceil(now));
-//         }
-//     });
-// });
+    
 
   });
